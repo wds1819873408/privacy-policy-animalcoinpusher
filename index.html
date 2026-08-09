@@ -294,21 +294,51 @@
         为了向您提供更丰富和完整的功能，我们会使用下述第三方软件开发工具包（简称“SDK”）为您提供服务。
         SDK 的具体信息收集和使用情况请以 SDK 运营方的隐私政策或相关声明为准。
       </p>
+      <p>
+        <strong>同意机制说明：</strong>您首次启动本应用时，我们将通过隐私政策弹窗向您明示个人信息处理的目的、方式与范围。
+        仅在您点击「同意并继续」之后，我们才会初始化广告等第三方 SDK，并在必要范围内处理相关信息。
+      </p>
+
+      <h3 id="sdk">接入第三方 SDK 情况说明</h3>
       <table>
         <thead>
           <tr>
             <th>SDK 名称</th>
-            <th>SDK 使用目的</th>
-            <th>SDK 收集的信息</th>
+            <th>开发者名称（全称）</th>
+            <th>使用目的</th>
+            <th>使用场景</th>
+            <th>调用权限说明</th>
+            <th>个人信息收集类型及方式</th>
+            <th>频次时机</th>
             <th>隐私政策链接</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Dirichlet（TapADN SDK）</td>
-            <td>广告投放合作</td>
-            <td>设备型号、操作系统版本、IP 地址、移动网络、地址信息</td>
+            <td>Dirichlet Ad SDK<br />（又名 TapADN SDK）</td>
+            <td>上海艾得蒽数字科技有限公司</td>
+            <td>激励视频广告投放、广告监测归因、反作弊与效果统计</td>
+            <td>用户在成长页 / 缺币提示等场景主动点击观看激励视频时</td>
+            <td>网络（INTERNET / ACCESS_NETWORK_STATE）；为实现广告服务，SDK 还可能按系统策略申请与广告相关的其他权限（以系统弹窗及对方政策为准）</td>
+            <td>
+              可能收集：设备型号、操作系统版本、IP 地址、网络状态、AndroidID / 广告标识符、粗略位置相关信息等（以对方政策为准）。
+              <br />采集方式：SDK 自动采集 / 接口传输
+            </td>
+            <td>用户同意本隐私政策后初始化 SDK；展示 / 加载广告时按需采集；非广告场景不主动调用激励视频接口</td>
             <td><a href="https://ssp.dirichlet.cn/docs/agreement/" target="_blank" rel="noopener noreferrer">https://ssp.dirichlet.cn/docs/agreement/</a></td>
+          </tr>
+          <tr>
+            <td>Unity 引擎<br />（Unity3D / Unity Player）</td>
+            <td>Unity Technologies ApS（及其关联方）</td>
+            <td>游戏引擎运行、渲染与基础设备适配、保障应用稳定运行</td>
+            <td>应用安装运行全过程（引擎基础能力）</td>
+            <td>视打包与系统版本而定；本应用业务侧声明的权限以网络相关为主。引擎为实现运行与适配可能读取设备标识等基础信息</td>
+            <td>
+              可能读取：AndroidID 等设备标识、设备型号与系统版本等运行必要信息（以 Unity 隐私政策及实际版本为准）。
+              <br />采集方式：引擎 / 运行时读取
+            </td>
+            <td>应用进程运行期间，由引擎在必要范围内读取；我们不会在您同意本隐私政策前初始化广告等第三方商业 SDK</td>
+            <td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://unity.com/legal/privacy-policy</a></td>
           </tr>
         </tbody>
       </table>
